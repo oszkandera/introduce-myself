@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+#box {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+#profile-image {
+    position: relative;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 0px solid #ccc;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+#info-panel {
+    top:50px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    background-color: white;
+    padding: 5px 5px 20px 5px;
+}
+
+#image-wrapper{
+    margin-top: -90px;
+}
+
+#image{
+    position: relative;
+    top: 0px;
+}
+
+#description{
+    text-align: justify;
+    width: 80%;
+    margin: 0px auto;
+}
+
+#text{
+    padding: 15px 0px 15px 0px;
+}
+
+#keywords{
+    text-align: center;
+}
+
+blockquote{
+    font-size: 1em;
+    margin:5px auto;
+    font-style:italic;
+    color: #555555;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid #89c4f4 ;
+    line-height:1.6;
+    position: relative;
+    background:#EDEDED;
+    text-align: left;
+}
+
+blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:#89c4f4;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+
+blockquote::after{
+    content: '';
+}
+ 
+blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:0.1em;
+}
+
+
+#contact-panel{
+    display: flex;
+    justify-content: center; /* Horizontally center the icons */
+    align-items: center;     /* Vertically center the icons */
+    gap: 20px;               /* Optional: Adds space between icons */
+    margin-top: 15px;
+}
+
+.contact-icon{
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    #info-panel {
+        width: 80%;
+    }
+  }
